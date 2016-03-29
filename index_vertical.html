@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
-        <title>Website Horizontal Scrolling with jQuery</title>
+        <title>Website Vertical Scrolling with jQuery</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="Website Horizontal Scrolling with jQuery" />
-        <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <meta name="description" content="Website Vertical Scrolling with jQuery" />
+        <meta name="keywords" content="jquery, vertical, scrolling, scroll, smooth"/>
+        <link rel="stylesheet" href="css/style_vertical.css" type="text/css" media="screen"/>
     </head>
     <style>
         a{
@@ -34,6 +34,13 @@
 
     </style>
     <body>
+        <div>
+            <span class="reference">
+                <a href="http://tympanus.net/codrops/2010/06/02/smooth-vertical-or-horizontal-page-scrolling-with-jquery/">© Codrops</a>
+                <a href="index.html">Horizontal Demo</a>
+            </span>
+        </div>
+
         <div class="section black" id="section1">
             <h2>Section 1</h2>
             <p>
@@ -86,15 +93,16 @@
             $(function() {
                 $('ul.nav a').bind('click',function(event){
                     var $anchor = $(this);
-                    /*
-                    if you want to use one of the easing effects:
+                    
                     $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
+                        scrollTop: $($anchor.attr('href')).offset().top
                     }, 1500,'easeInOutExpo');
-                     */
+                    /*
+                    if you don't want to use the easing effects:
                     $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
+                        scrollTop: $($anchor.attr('href')).offset().top
                     }, 1000);
+                    */
                     event.preventDefault();
                 });
             });
