@@ -1,0 +1,15 @@
+#containers { width:960px; margin:0 auto; padding-top:150px }
+
+.third {
+    width:293px;
+    margin:0 40px 40px 0;
+    overflow:hidden;
+    float:left;
+    position:relative;
+}
+
+.third img { display:block; }
+
+.top { position:absolute; top:0; left:0; z-index:20 }
+
+.last { margin-right:0; }
