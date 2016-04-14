@@ -471,6 +471,7 @@
 	.st-panel p {
 		width: 90%;
 		left: 5%;
+		font-size: medium;
 	}
 
 	.st-panel .imgs {
